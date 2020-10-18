@@ -1,0 +1,39 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "c:\iverilog\lib\ivl\system.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "c:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "c:\iverilog\lib\ivl\va_math.vpi";
+S_0000000000862ad0 .scope module, "full_adder" "full_adder" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "Cin";
+    .port_info 1 /INPUT 1 "x";
+    .port_info 2 /INPUT 1 "y";
+    .port_info 3 /OUTPUT 1 "s";
+    .port_info 4 /OUTPUT 1 "Cout";
+o0000000000897108 .functor BUFZ 1, C4<z>; HiZ drive
+o0000000000897138 .functor BUFZ 1, C4<z>; HiZ drive
+L_00000000001a9da0 .functor XOR 1, o0000000000897108, o0000000000897138, C4<0>, C4<0>;
+o0000000000896fb8 .functor BUFZ 1, C4<z>; HiZ drive
+L_00000000008950e0 .functor XOR 1, L_00000000001a9da0, o0000000000896fb8, C4<0>, C4<0>;
+L_00000000001aea30 .functor AND 1, o0000000000897108, o0000000000897138, C4<1>, C4<1>;
+L_00000000001aeaa0 .functor XOR 1, o0000000000897108, o0000000000897138, C4<0>, C4<0>;
+L_00000000001aeb10 .functor AND 1, L_00000000001aeaa0, o0000000000896fb8, C4<1>, C4<1>;
+L_00000000001aeb80 .functor OR 1, L_00000000001aea30, L_00000000001aeb10, C4<0>, C4<0>;
+v00000000001a9d00_0 .net "Cin", 0 0, o0000000000896fb8;  0 drivers
+v0000000000862c60_0 .net "Cout", 0 0, L_00000000001aeb80;  1 drivers
+v0000000000862d00_0 .net *"_ivl_0", 0 0, L_00000000001a9da0;  1 drivers
+v0000000000862da0_0 .net *"_ivl_4", 0 0, L_00000000001aea30;  1 drivers
+v0000000000862e40_0 .net *"_ivl_6", 0 0, L_00000000001aeaa0;  1 drivers
+v0000000000862ee0_0 .net *"_ivl_8", 0 0, L_00000000001aeb10;  1 drivers
+v00000000001ae7c0_0 .net "s", 0 0, L_00000000008950e0;  1 drivers
+v00000000001ae860_0 .net "x", 0 0, o0000000000897108;  0 drivers
+v00000000001ae900_0 .net "y", 0 0, o0000000000897138;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "main.v";
