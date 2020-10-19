@@ -1,0 +1,50 @@
+$date
+	Mon Oct 19 21:45:31 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 ! cout $end
+$var wire 1 " add_result $end
+$var reg 1 # carry $end
+$var reg 1 $ first $end
+$var reg 1 % second $end
+$scope module adder $end
+$var wire 1 # Cin $end
+$var wire 1 ! Cout $end
+$var wire 1 " s $end
+$var wire 1 $ x $end
+$var wire 1 % y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1#
+1$
+#40
+0!
+1"
+0#
+1%
+0$
+#80
+1#
+0%
+#130
+1!
+1%
+1$
+#230
