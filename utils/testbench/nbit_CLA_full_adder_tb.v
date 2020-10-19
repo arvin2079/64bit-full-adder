@@ -8,30 +8,28 @@ reg [7 : 0] second = 8'b00000000;
 // wire [64 : 0] add_result;
 wire [8 : 0] add_result;
 
-wire cout;
-
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,test);
 
     # 50;
-    first = 8'b00000001;
-    second = 8'b00000000;
+    first =  8'b00000001;
+    second = 8'b00000001;
 
     # 100;
-    first = 8'b00000010;
-    second = 8'b00010000;
+    first =  8'b00000010;
+    second = 8'b00000001;
 
-    # 300;
-    first = 8'b00011100;
+    # 100;
+    first =  8'b00011100;
     second = 8'b00001100;
 
-    # 500 $finish;
+    # 100 $finish;
   end
 
-  nbit_CLA_full_adder adder (first, second, 1'b0, add_result, cout);
+  nbit_CLA_full_adder adder (first, second, add_result);
 
   initial
-     $monitor("At time %t, result = %h, cout = %b",
-              $time, add_result, cout);
+     $monitor("At time %t, result = %b",
+              $time, add_result);
 endmodule // test
