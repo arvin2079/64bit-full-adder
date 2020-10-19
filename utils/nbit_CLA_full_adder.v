@@ -1,9 +1,9 @@
 `include "./1bit_full_adder.v"
 
-module nbit_CLA_full_adder (num_one,num_two, S);
+module nbit_CLA_full_adder (num_one, num_two, S);
 
   // you can customize the bit number from here
-  parameter BIT_NUMBER = 8;
+  parameter integer BIT_NUMBER = 64;
 
   input [BIT_NUMBER-1 : 0] num_one;
   input [BIT_NUMBER-1 : 0] num_two;
@@ -16,7 +16,7 @@ module nbit_CLA_full_adder (num_one,num_two, S);
 
   assign Cins[0] = 1'b0;
   generate
-    for (genvar i=-1 ; i<BIT_NUMBER ; i=i+1)
+    for (genvar i=0 ; i<BIT_NUMBER ; i=i+1)
       begin
         assign generates[i] = num_one[i] & num_two[i];
         assign propagates[i] = num_one[i] ^ num_two[i];
@@ -26,7 +26,7 @@ module nbit_CLA_full_adder (num_one,num_two, S);
 
 
   generate
-    for (genvar j=-1 ; j<BIT_NUMBER ; j=j+1)
+    for (genvar j=0 ; j<BIT_NUMBER ; j=j+1)
       begin
         wire cout;
         one_bit_full_adder adder (num_one[j], num_two[j], Cins[j], sum[j], cout);
@@ -34,5 +34,5 @@ module nbit_CLA_full_adder (num_one,num_two, S);
   endgenerate
 
 
-  assign S = {sum, Cins[BIT_NUMBER]};
+  assign S = {Cins[BIT_NUMBER], sum};
 endmodule // nbit_full_addeX,Y,cin,s,coutr
