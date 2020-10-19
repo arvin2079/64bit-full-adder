@@ -1,0 +1,231 @@
+$date
+	Mon Oct 19 23:19:43 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 ! cout $end
+$var wire 9 " add_result [8:0] $end
+$var reg 8 # first [7:0] $end
+$var reg 8 $ second [7:0] $end
+$scope module adder $end
+$var wire 8 % X [7:0] $end
+$var wire 8 & Y [7:0] $end
+$var wire 1 ' initCin $end
+$var wire 8 ( sum [7:0] $end
+$var wire 8 ) propagates [7:0] $end
+$var wire 8 * generates [7:0] $end
+$var wire 9 + S [8:0] $end
+$var wire 1 ! Cout $end
+$var wire 9 , Cins [8:0] $end
+$scope begin genblk1[0] $end
+$upscope $end
+$scope begin genblk1[1] $end
+$upscope $end
+$scope begin genblk1[2] $end
+$upscope $end
+$scope begin genblk1[3] $end
+$upscope $end
+$scope begin genblk1[4] $end
+$upscope $end
+$scope begin genblk1[5] $end
+$upscope $end
+$scope begin genblk1[6] $end
+$upscope $end
+$scope begin genblk1[7] $end
+$upscope $end
+$scope begin genblk2[0] $end
+$var wire 1 - cout $end
+$scope module adder $end
+$var wire 1 . Cin $end
+$var wire 1 - Cout $end
+$var wire 1 / s $end
+$var wire 1 0 x $end
+$var wire 1 1 y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[1] $end
+$var wire 1 2 cout $end
+$scope module adder $end
+$var wire 1 3 Cin $end
+$var wire 1 2 Cout $end
+$var wire 1 4 s $end
+$var wire 1 5 x $end
+$var wire 1 6 y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[2] $end
+$var wire 1 7 cout $end
+$scope module adder $end
+$var wire 1 8 Cin $end
+$var wire 1 7 Cout $end
+$var wire 1 9 s $end
+$var wire 1 : x $end
+$var wire 1 ; y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[3] $end
+$var wire 1 < cout $end
+$scope module adder $end
+$var wire 1 = Cin $end
+$var wire 1 < Cout $end
+$var wire 1 > s $end
+$var wire 1 ? x $end
+$var wire 1 @ y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[4] $end
+$var wire 1 A cout $end
+$scope module adder $end
+$var wire 1 B Cin $end
+$var wire 1 A Cout $end
+$var wire 1 C s $end
+$var wire 1 D x $end
+$var wire 1 E y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[5] $end
+$var wire 1 F cout $end
+$scope module adder $end
+$var wire 1 G Cin $end
+$var wire 1 F Cout $end
+$var wire 1 H s $end
+$var wire 1 I x $end
+$var wire 1 J y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[6] $end
+$var wire 1 K cout $end
+$scope module adder $end
+$var wire 1 L Cin $end
+$var wire 1 K Cout $end
+$var wire 1 M s $end
+$var wire 1 N x $end
+$var wire 1 O y $end
+$upscope $end
+$upscope $end
+$scope begin genblk2[7] $end
+$var wire 1 P cout $end
+$scope module adder $end
+$var wire 1 Q Cin $end
+$var wire 1 P Cout $end
+$var wire 1 R s $end
+$var wire 1 S x $end
+$var wire 1 T y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+0'
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+0!
+$end
+#50
+b10 "
+b10 +
+b1 (
+1/
+b1 )
+10
+b1 #
+b1 %
+#150
+1C
+0/
+b100100 "
+b100100 +
+b10010 (
+14
+b10010 )
+1E
+00
+15
+b10000 $
+b10000 &
+b10 #
+b10 %
+#450
+1H
+1G
+1A
+1>
+0C
+1=
+1B
+b111000 ,
+b1010000 "
+b1010000 +
+b101000 (
+04
+17
+1<
+b10000 )
+b1100 *
+1;
+1@
+0E
+05
+1:
+1?
+1D
+b1100 $
+b1100 &
+b11100 #
+b11100 %
+#950
