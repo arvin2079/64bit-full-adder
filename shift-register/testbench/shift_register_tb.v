@@ -5,7 +5,7 @@ module test;
     reg clk;
     wire out;
 
-    shift_register shRe (in, clk, out);
+    shift_register shRe (in, out, clk);
 
     initial
     begin
@@ -27,7 +27,7 @@ module test;
         in = 1;
         #4
 
-        D = 1;
+        in = 1;
         #4
 
         $finish;
