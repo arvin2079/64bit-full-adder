@@ -9,26 +9,81 @@ module test;
 
     initial
     begin
-    $monitor("int: %b, clock: %b, out: %b --- at time %t", in, clk, out, $time);
+    $monitor("in: %b, clock: %b, out: %b --- at time %t", in, clk, out, $time);
     $dumpfile("shift_register.vcd");
     $dumpvars(0,test);
-        in = 0;
-        #4
 
         in = 1;
-        #4
-
-        in = 0;
-        #4
-
-        in = 0;
-        #4
+        #1
 
         in = 1;
-        #4
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
 
         in = 1;
-        #4
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
 
         $finish;
     end
@@ -36,8 +91,8 @@ module test;
     integer i;
     initial begin
       clk = 0;
-      for(i=0;i<20;i=i+1) begin
-        #2
+      for(i=0;i<200;i=i+1) begin
+        #1
         clk = ~clk;
       end
     end
