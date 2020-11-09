@@ -1,4 +1,4 @@
-module multiplexer (i0, i1, s, out);
+module multiplexer_2to1 (i0, i1, s, out);
 
     input wire i0;
     input wire i1;

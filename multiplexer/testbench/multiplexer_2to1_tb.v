@@ -1,12 +1,12 @@
 `include "../2bit_multiplexer.v"
 
-module test;
+module test_mul_2to1;
     reg i0;
     reg i1;
     reg s;
     wire out;
 
-    multiplexer m (i0, i1, s, out);
+    multiplexer mul (i0, i1, s, out);
 
     initial
     begin
