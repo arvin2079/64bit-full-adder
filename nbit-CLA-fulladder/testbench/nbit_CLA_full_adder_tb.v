@@ -1,3 +1,5 @@
+`include "../nbit_CLA_full_adder.v"
+
 module test;
 
 // reg [7 : 0] first8 = 8'b00000000;
@@ -40,7 +42,7 @@ wire [64 : 0] add_result64;
   end
 
   // nbit_CLA_full_adder adder8 (first8, second8, add_result8, num8);
-  nbit_CLA_full_adder adder64 (first64, second64, add_result64);
+  nbit_CLA_full_adder #(64) adder64 (first64, second64, add_result64);
 
   // initial begin
   //    $monitor("8bit ---> At time %t, result = %b", $time, add_result8);

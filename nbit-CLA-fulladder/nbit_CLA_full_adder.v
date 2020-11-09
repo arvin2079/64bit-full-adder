@@ -1,9 +1,7 @@
-`include "./1bit_full_adder.v"
+`include "../1bit_full_adder.v"
 
 module nbit_CLA_full_adder (num_one, num_two, S);
-
-  // you can customize the bit number from here
-  parameter integer BIT_NUMBER = 64;
+  parameter integer BIT_NUMBER = 8;
 
   input [BIT_NUMBER-1 : 0] num_one;
   input [BIT_NUMBER-1 : 0] num_two;
@@ -33,6 +31,6 @@ module nbit_CLA_full_adder (num_one, num_two, S);
       end
   endgenerate
 
-
   assign S = {Cins[BIT_NUMBER], sum};
+
 endmodule // nbit_full_addeX,Y,cin,s,coutr
