@@ -1,11 +1,8 @@
-`include "../1bit_full_adder.v"
-
 module nbit_CLA_full_adder (num_one, num_two, S);
   parameter integer BIT_NUMBER = 8;
 
   input [BIT_NUMBER-1 : 0] num_one;
   input [BIT_NUMBER-1 : 0] num_two;
-
   output [BIT_NUMBER : 0] S;
 
   wire [BIT_NUMBER : 0] Cins;
@@ -34,3 +31,14 @@ module nbit_CLA_full_adder (num_one, num_two, S);
   assign S = {Cins[BIT_NUMBER], sum};
 
 endmodule // nbit_full_addeX,Y,cin,s,coutr
+
+module one_bit_full_adder (x,y,Cin,s,Cout);
+  input x;
+  input y;
+  input Cin;
+  output s;
+  output Cout;
+
+  assign s = x ^ y ^ Cin;
+  assign Cout = (x & y) | (x ^ y) & Cin;
+endmodule // 1bit_full_adder

@@ -1,4 +1,4 @@
-`include "../../d_flip_flop/d_flip_flop.v"
+`include "../d-flip-flop/d_flip_flop.v"
 
 module shift_register (in, clk, reset, out);
   input wire in;
