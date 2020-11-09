@@ -9,7 +9,7 @@ module d_flip_flop(D, clk, reset, Q, Qbar);
         if(reset == 1'b1)
             Q = 0;
         else
-            Q = d;
+            Q = D;
         Qbar = ~Q;
     end
 endmodule
