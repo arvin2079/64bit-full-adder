@@ -5,20 +5,23 @@ module test;
   reg [0:4] I;
   reg clk;
   reg reset;
+  wire [3:0] sh_reg_out;
+  wire [4:0] adder_out;
+
 
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,test);
-      I =4'b0100;
+      I =5'b00100;
       reset =0;
-      #100
+      #50
     $finish;
   end
 
-  increment_program_counter ipc (I, clk, reset);
+  increment_program_counter ipc (I, clk, reset, sh_reg_out, adder_out);
 
   initial begin
-    $monitor("time %t, I: %b, clk: %b, reset: %b", $time, I, clk, reset);
+    $monitor("time %t, shift_register output: %b, adder output: %b, clk: %b, reset: %b", $time, sh_reg_out, adder_out, clk, reset);
   end
 
   integer i;
