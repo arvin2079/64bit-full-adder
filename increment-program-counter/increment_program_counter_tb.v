@@ -1,4 +1,4 @@
-// `include "./increment_program_counter.v"
+`include "increment_program_counter.v"
 
 module test;
 
