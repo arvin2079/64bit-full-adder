@@ -2,20 +2,20 @@
 
 module test;
     reg in;
+    reg shift = 1'b1;
     reg clk;
     reg reset;
     wire out;
 
-    shift_register shRe (in, clk, reset, out);
+    shift_register #(8) shRe (clk, shift, in, out);
 
     initial
     begin
-    $monitor("in: %b, clock: %b, reset: %b, out: %b --- at time %t", in, clk, reset, out, $time);
+    $monitor("in: %b, clock: %b, out: %b --- at time %t", in, clk, out, $time);
     $dumpfile("shift_register.vcd");
     $dumpvars(0,test);
 
         in = 1;
-        reset = 0;
         #1
 
         in = 1;
@@ -34,7 +34,6 @@ module test;
         #1
 
         in = 1;
-        // reset = 1;
         #1
 
         in = 1;
@@ -62,15 +61,84 @@ module test;
         #1
 
         in = 0;
-        reset = 1;
         #1
 
         in = 0;
-        reset = 1;
         #1
 
         in = 0;
-        reset = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 1;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
+        #1
+
+        in = 0;
         #1
 
         in = 0;

@@ -1,16 +1,17 @@
-`include "../increment_program_counter.v"
+// `include "./increment_program_counter.v"
 
 module test;
 
-  wire [0:3] I;
+  reg [0:4] I;
   reg clk;
+  reg reset;
 
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,test);
-      I =4'b0000;
+      I =4'b0100;
       reset =0;
-      #1000
+      #100
     $finish;
   end
 

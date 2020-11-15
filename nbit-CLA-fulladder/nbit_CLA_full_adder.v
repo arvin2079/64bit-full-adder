@@ -28,6 +28,10 @@ module nbit_CLA_full_adder (num_one, num_two, S);
       end
   endgenerate
 
+  always @ ( * ) begin
+    $display("MONITOR --> time %t, f: %b, sec: %b, res: %b", $time, num_one, num_two, {Cins[BIT_NUMBER], sum});
+  end
+
   assign S = {Cins[BIT_NUMBER], sum};
 
 endmodule // nbit_full_addeX,Y,cin,s,coutr
