@@ -1,5 +1,5 @@
 $date
-	Sun Nov 15 23:20:12 2020
+	Mon Nov 16 15:33:07 2020
 $end
 $version
 	Icarus Verilog
@@ -25,18 +25,18 @@ $enddefinitions $end
 #0
 $dumpvars
 bx (
-bx '
-bx &
+b0 '
+b0 &
 b10110 %
 x$
 b10110 #
 0"
-bx !
+b0 !
 $end
 #1
-bx1 !
-bx1 &
-bx10001 '
+b1 !
+b1 &
+b10001 '
 b101 (
 1"
 b10001 #

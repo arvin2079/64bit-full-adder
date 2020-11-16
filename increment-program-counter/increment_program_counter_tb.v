@@ -1,8 +1,7 @@
 `include "increment_program_counter.v"
 
 module test;
-
-  reg [0:4] I;
+  // reg [0:4] I;
   reg clk;
   reg reset;
   wire [3:0] sh_reg_out;
@@ -12,16 +11,19 @@ module test;
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,test);
-      I =5'b00100;
       reset =0;
-      #50
+      #20;
+
+      // I =5'b00100;
+      // reset =0;
+      // #50
     $finish;
   end
 
-  increment_program_counter ipc (I, clk, reset, sh_reg_out, adder_out);
+  increment_program_counter ipc (clk, reset, sh_reg_out, adder_out);
 
   initial begin
-    $monitor("time %t, shift_register output: %b, adder output: %b, clk: %b, reset: %b", $time, sh_reg_out, adder_out, clk, reset);
+    $monitor("time %t, shift_register_output: %b, adder_output: %b, clk: %b, reset: %b", $time, sh_reg_out, adder_out, clk, reset);
   end
 
   integer i;
