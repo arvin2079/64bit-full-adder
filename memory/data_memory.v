@@ -3,10 +3,10 @@ module memory(data_in, read_adr, write_adr, rd, wr, data_out);
   input [9:0] read_adr;
   input [9:0] write_adr;
   input rd, wr;
-  output [63:0] data_out
+  output [63:0] data_out;
 
   // memory array
-  reg [63:0] cells [0:1023];
+  reg [63:0] cells[0:1023];
   reg [63:0] temp_out;
 
   // read
