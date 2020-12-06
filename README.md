@@ -13,7 +13,7 @@
 	- `MAGORITY-LOGIC`
 	- `PARITY-GENERATOR`
 	- `DECODER-IMPLEMENTATION`
-## Usage :
+## Verilog Usage :
 ```bash
 ## iverilog compile command :
 iverilog -o [DESTINATION_FILE] [VERILOG_FILE.v]
