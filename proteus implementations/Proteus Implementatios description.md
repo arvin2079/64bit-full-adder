@@ -115,4 +115,4 @@ F = A'B'C'D + A'B'CD' + AB'C'D' + AB'CD
 
 ***
 ### Implemention
-for implemention check out the [proteus directory](https://www.google.com).
+for implemention check out the [proteus directory](https://github.com/arvin2079/verilog-proj/tree/main/proteus%20implementations).
