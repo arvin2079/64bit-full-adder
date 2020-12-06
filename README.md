@@ -1,6 +1,6 @@
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-orange.svg)](https://opensource.org/licenses/) [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/arvin2079/atomic-design-ui/blob/master/LICENSEs)
-## Verilog implementation of circuits listed below :
+## Verilog implementation :
 - `n-bit carry-look-ahead full-adder`
 - `Shift-register`
 - `2 to 1 and 4 to 1 multiplexer`
@@ -8,7 +8,11 @@
 - `MIPS machine data-path`
 	- `Increment program counter`
 	- `1k-64bit memory`
-
+## Proteus implementation :
+- `proteus representation of three exercises`
+	- `MAGORITY-LOGIC`
+	- `PARITY-GENERATOR`
+	- `DECODER-IMPLEMENTATION`
 ## Usage :
 ```bash
 ## iverilog compile command :
