@@ -43,8 +43,12 @@ A | B | C | D || F
 ```
 F = CDB + ABC + ACD + ABD
 ```
----
 
+### Scheme :
+
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/MajorityLogic.PNG "Majority Logic")
+
+---
 ### Even Parity Bit Generator
 assumptions:
 - `4` bit signal.
@@ -86,6 +90,11 @@ F = A'B'C'D + A'B'CD' + AB'C'D' + AB'CD
 
   = A ⊕ B ⊕ C ⊕ D
 ```
+
+### Scheme :
+
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/EvenParityGenerator.PNG "Even Parity Generator")
+
 ---
 ### Decoder Implementation
 assumptions:
@@ -106,6 +115,11 @@ A | B | C || F1 | F2 | F3
 1 | 0 | 1 || 1 | 0 | 0 
 1 | 1 | 0 || 0 | 0 | 1 
 1 | 1 | 1 || 1 | 0 | 1 
+
+
+### Scheme :
+
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/Decoder.PNG "Decoder")
 
 ***
 
