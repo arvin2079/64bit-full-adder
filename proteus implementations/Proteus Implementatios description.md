@@ -47,8 +47,12 @@ F = CDB + ABC + ACD + ABD
 
   = ((((BC)')'(D'A')')')((((AD)')'(B'C')')')
 ```
----
 
+### Scheme :
+
+![alt text](media/MajorityLogic.png "Majority Logic")
+
+---
 ### Even Parity Bit Generator
 assumptions:
 - `4` bit signal.
@@ -90,6 +94,11 @@ F = A'B'C'D + A'B'CD' + AB'C'D' + AB'CD
 
   = A ⊕ B ⊕ C ⊕ D
 ```
+
+### Scheme :
+
+![alt text](media/EvenParityGenerator.png "Decoder")
+
 ---
 ### Decoder Implementation
 assumptions:
@@ -110,6 +119,11 @@ A | B | C || F1 | F2 | F3
 1 | 0 | 1 || 1 | 0 | 0 
 1 | 1 | 0 || 0 | 0 | 1 
 1 | 1 | 1 || 1 | 0 | 1 
+
+
+### Scheme :
+
+![alt text](media/Decoder.png "Decoder")
 
 ***
 
