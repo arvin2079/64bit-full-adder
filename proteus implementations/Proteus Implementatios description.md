@@ -50,7 +50,7 @@ F = CDB + ABC + ACD + ABD
 
 ### Scheme :
 
-![alt text](media/MajorityLogic.png "Majority Logic")
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/MajorityLogic.PNG "Majority Logic")
 
 ---
 ### Even Parity Bit Generator
@@ -97,7 +97,7 @@ F = A'B'C'D + A'B'CD' + AB'C'D' + AB'CD
 
 ### Scheme :
 
-![alt text](media/EvenParityGenerator.png "Decoder")
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/EvenParityGenerator.PNG "Even Parity Generator")
 
 ---
 ### Decoder Implementation
@@ -123,7 +123,7 @@ A | B | C || F1 | F2 | F3
 
 ### Scheme :
 
-![alt text](media/Decoder.png "Decoder")
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/Decoder.PNG "Decoder")
 
 ***
 
