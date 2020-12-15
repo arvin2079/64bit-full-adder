@@ -10,7 +10,8 @@ assumptions:
 - If `x = 0`, the circuit counts downward with the sequence `11, 10, 01, 00`, and the count repeats.
 
 #### State Diagram :
-![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/StateDiagram.PNG "State Diagram")
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/sequentioal%20circuits/media/StateDiagram.png
+ "State Diagram")
 
 #### Truth table :
 
@@ -78,7 +79,7 @@ K2 = E
 
 ### Scheme :
 
-![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/media/MajorityLogic.PNG "Up/Down Counter With Enable")
+![alt text](https://github.com/arvin2079/verilog-proj/blob/main/proteus%20implementations/sequentioal%20circuits/media/scheme.png "Up/Down Counter With Enable")
 
 ---
 
