@@ -1,6 +1,6 @@
 
 
-# Proteus Implementatios
+# Proteus Combinational Circuits Implementatios
 ## Issues :
 1. Majority Logic
 2. Parity Generator
