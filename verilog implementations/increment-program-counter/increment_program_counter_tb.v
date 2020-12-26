@@ -11,13 +11,9 @@ module test;
   initial begin
     $dumpfile("test.vcd");
     $dumpvars(0,test);
-      reset =0;
-      #20;
 
-      // I =5'b00100;
-      // reset =0;
-      // #50
-    $finish;
+    reset =0;
+    #20 $finish;
   end
 
   increment_program_counter ipc (clk, reset, sh_reg_out, adder_out);
