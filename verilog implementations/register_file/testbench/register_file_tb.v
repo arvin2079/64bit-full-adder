@@ -39,7 +39,7 @@ module test;
     end
   end
 
-  register_file register_file_test (regWrite, readReg1, readReg2, readData1, readData2, writeReg, writeData, clk);
+  register_file register_file_test (regWrite, readReg1, readReg2, writeReg, writeData, readData1, readData2, clk);
 
   always @ ( * ) begin
     $monitor("regWrite: %b, readReg1: %b, readReg2: %b, readData1: %b, readData2: %b, writeReg: %b, writeData: %b, clk: %b",

@@ -1,4 +1,4 @@
-module memory(data_in, read_adr, write_adr, rd, wr, data_out);
+module memory(clk, data_in, read_adr, write_adr, rd, wr, data_out);
   input [63:0] data_in;
   input [9:0] read_adr;
   input [9:0] write_adr;
@@ -10,7 +10,7 @@ module memory(data_in, read_adr, write_adr, rd, wr, data_out);
   reg [63:0] temp_out;
 
   // read
-  always @ ( * ) begin
+  always @ ( posedge clk ) begin
     if(rd) begin
       if(wr && (read_adr == write_adr)) begin
         temp_out = 'bx;
@@ -21,7 +21,7 @@ module memory(data_in, read_adr, write_adr, rd, wr, data_out);
     end
   end
 
-  always @ ( * ) begin
+  always @ ( posedge clk ) begin
     if(wr) begin
       cells[write_adr] = data_in;
     end
