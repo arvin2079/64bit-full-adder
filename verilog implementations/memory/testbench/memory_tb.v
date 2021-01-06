@@ -1,4 +1,4 @@
-`include "../data_memory.v"
+`include "../memory.v"
 
 module test;
   reg [63:0] data_in;
